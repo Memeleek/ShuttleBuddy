@@ -76,6 +76,7 @@
         </q-select>
       </q-form>
     </div>
+    <q-btn to="home" label="Create Account" outline color="purple" />
   </q-page>
 </template>
 

@@ -1,9 +1,7 @@
 <template>
-  <h2>Signup</h2>
-
-  <img src="C:\dev\quasar-project2\public\Images\qjvjcl9w.png" alt="" />
   <q-page>
     <div class="q-pa-md">
+      <h2>Signup</h2>
       <q-form name="myform" id="myform" action="" method="get">
         <h5>Enter Your Email And Password Below</h5>
         <span>{{ information }}</span>
@@ -11,6 +9,7 @@
         <q-input filled v-model="Password" label="Password" stack-label :dense="dense" />
       </q-form>
     </div>
+    <q-btn to="info" label="Next" outline color="purple" />
   </q-page>
 </template>
 
