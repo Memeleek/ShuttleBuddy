@@ -3,29 +3,32 @@
     <h4>Congradulations you have matched with:</h4>
     <h4>{{ randomPerson }}</h4>
     <h4>
-      you both want to do at on
-      {{ this.selectedDate }}
+      you both want to do
+      {{}}
+      at on
+      {{ selectedDate }}
     </h4>
   </q-page>
 </template>
 
 <script setup>
-//
-</script>
+import { useRoute } from 'vue-router'
+import { reactive, ref } from 'vue'
 
-<script>
-var peopleNames = []
-peopleNames[0] = 'John'
-peopleNames[1] = 'Alex'
-peopleNames[2] = 'Kevin'
-peopleNames[3] = 'Fred'
-peopleNames[4] = 'Sammy'
+const route = useRoute()
+const selectedDate = ref('')
+selectedDate.value = route.query.d
 
-//var peoplePicures
+const peopleNames = reactive([])
+peopleNames.push('John')
+peopleNames.push('Alex')
+peopleNames.push('Kevin')
+peopleNames.push('Fred')
+peopleNames.push('Sammy')
+//const peoplePicures
 
 const randomIndex = Math.floor(Math.random() * peopleNames.length)
-var randomPerson = peopleNames[randomIndex]
 
-var date = this.this.$route.query.date
-console.log(date)
+const randomPerson = peopleNames[randomIndex]
+//const randomPerson = 'John'
 </script>

@@ -38,11 +38,13 @@
 <script setup>
 import { GoogleMap, Marker } from 'vue3-google-map'
 import { ref, computed } from 'vue'
+import { useRouter } from 'vue-router'
 
 const center = { lat: 39.7983785, lng: -105.8189844 }
 const activity = ref('')
 const activityOptions = ['Shuttled Skiing', 'Shuttled Biking', 'Resort Skiing', 'Resort Biking']
 const selectedDate = ref(null)
+const router = useRouter()
 const information = computed(() => {
   return activity.value
 })
@@ -50,5 +52,6 @@ const handleClick = function () {
   console.log('match button clicked')
   console.log(information.value)
   console.log(selectedDate.value)
+  router.push({ path: 'match', query: { d: selectedDate.value } })
 }
 </script>
