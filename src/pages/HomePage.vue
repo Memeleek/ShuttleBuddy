@@ -46,12 +46,14 @@ const activityOptions = ['Shuttled Skiing', 'Shuttled Biking', 'Resort Skiing', 
 const selectedDate = ref(null)
 const router = useRouter()
 const information = computed(() => {
-  return activity.value
+  return activity.value + ' on ' + selectedDate.value
 })
+
 const handleClick = function () {
   console.log('match button clicked')
-  console.log(information.value)
+  console.log(activity.value)
   console.log(selectedDate.value)
-  router.push({ path: 'match', query: { d: selectedDate.value } })
+  console.log(information.value)
+  router.push({ path: 'match', query: { d: information.value } })
 }
 </script>
