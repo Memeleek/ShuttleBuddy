@@ -7,9 +7,9 @@
         <span>{{ information }}</span>
         <q-input filled v-model="email" label="Email" stack-label :dense="dense" />
         <q-input filled v-model="Password" label="Password" stack-label :dense="dense" />
+        <q-btn to="Home" label="Login" outline color="primary" />
       </q-form>
     </div>
-    <q-btn to="Home" label="Login" outline color="purple" />
   </q-page>
 </template>
 

@@ -5,11 +5,18 @@
       <q-form name="myform" id="myform" action="" method="get">
         <h5>Enter Your Email And Password Below</h5>
         <span>{{ information }}</span>
-        <q-input filled v-model="email" label="Email" stack-label :dense="dense" />
-        <q-input filled v-model="Password" label="Password" stack-label :dense="dense" />
+        <q-input class="q-mb-md" filled v-model="email" label="Email" stack-label :dense="dense" />
+        <q-input
+          class="q-mb-md"
+          filled
+          v-model="Password"
+          label="Password"
+          stack-label
+          :dense="dense"
+        />
+        <q-btn class="q-mb-md" to="info" label="Next" outline color="primary" />
       </q-form>
     </div>
-    <q-btn to="info" label="Next" outline color="purple" />
   </q-page>
 </template>
 

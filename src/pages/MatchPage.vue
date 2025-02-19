@@ -1,13 +1,13 @@
 <template>
-  <q-page class="flex flex-top">
-    <div>
+  <q-page>
+    <div class="q-pa-md">
       <h4>Congratulations you have matched with:</h4>
       <h4>{{ randomPerson }}</h4>
       <h4>
         You both want to do
         {{ selectedDate }}
       </h4>
-      <div><q-btn to="home" label="Home" outline color="purple" /></div>
+      <q-btn to="home" label="Home" outline color="primary" />
     </div>
   </q-page>
 </template>

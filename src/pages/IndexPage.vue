@@ -1,11 +1,15 @@
 <template>
-  <q-page class="flex flex-center">
-    <h1>Welcome to shuttle Buddy</h1>
-    <h4 display:block>
-      <div class="q-row"><q-btn to="login" label="Login" outline color="purple" /></div>
-      <br />
-      Dont Have an account? <q-btn to="Signup" label="SignUp" outline color="purple" />
-    </h4>
+  <q-page>
+    <div class="q-pa-md">
+      <img src="icons/favicon.png" style="width: 100px; border-radius: 10px" alt="" />
+      <h2>Welcome to shuttle Buddy</h2>
+      <h4 display:block>
+        <div class="q-row"><q-btn to="login" label="Login" outline color="primary" /></div>
+        <br />
+        Dont Have an account? <br />
+        <q-btn to="Signup" label="SignUp" outline color="primary" />
+      </h4>
+    </div>
   </q-page>
 </template>
 

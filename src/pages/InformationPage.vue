@@ -74,9 +74,9 @@
           v-model="bikerent"
         >
         </q-select>
+        <q-btn to="home" label="Create Account" outline color="primary" />
       </q-form>
     </div>
-    <q-btn to="home" label="Create Account" outline color="purple" />
   </q-page>
 </template>
 
