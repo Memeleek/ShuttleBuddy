@@ -28,27 +28,27 @@ const linksList = [
   {
     title: 'Home',
     icon: 'home',
-    link: 'https://shuttlebuddy.netlify.app/#/home',
+    link: '/#/',
+  },
+  {
+    title: 'Planning',
+    icon: 'map',
+    link: '/#/plan',
   },
   {
     title: 'Profile',
     icon: 'account_circle',
-    link: 'https://shuttlebuddy.netlify.app/#/profile',
+    link: '/#/profile',
   },
   {
-    title: 'Log out and Login',
+    title: 'Login',
     icon: 'logout',
-    link: 'https://shuttlebuddy.netlify.app/#/login',
-  },
-  {
-    title: 'Log out and SignUp',
-    icon: 'logout',
-    link: 'https://shuttlebuddy.netlify.app/#/signup',
+    link: '/#/login',
   },
   {
     title: 'Settings',
     icon: 'settings',
-    link: 'https://shuttlebuddy.netlify.app/#/settings',
+    link: '/#/settings',
   },
 ]
 

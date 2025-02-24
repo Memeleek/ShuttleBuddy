@@ -18,6 +18,7 @@
         <q-select
           id="location"
           filled
+          class="q-mb-md"
           label="Location"
           :options="locationOptions"
           v-model="location"

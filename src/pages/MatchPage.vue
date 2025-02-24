@@ -1,13 +1,18 @@
 <template>
   <q-page>
-    <div class="q-pa-md">
-      <h4>Congratulations you have matched with:</h4>
-      <h4>{{ randomPerson }}</h4>
-      <h4>
+    <div class="q-pa-md text-body1">
+      <p>
+        Congratulations you have matched with: <b>{{ randomPerson }}</b>
+      </p>
+
+      <p>
         You both want to do
-        {{ selectedDate }}
-      </h4>
-      <q-btn to="home" label="Home" outline color="primary" />
+        <b>{{ selectedDate }}</b>
+      </p>
+      <p>
+        Click <b><a href="mailto:test@test.com">Here</a></b> to email <b>{{ randomPerson }}</b>
+      </p>
+      <q-btn to="plan" label="Back To Planning" outline color="primary" />
     </div>
   </q-page>
 </template>

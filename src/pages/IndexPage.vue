@@ -5,9 +5,6 @@
       <h2>Welcome to shuttle Buddy</h2>
       <h4 display:block>
         <div class="q-row"><q-btn to="login" label="Login" outline color="primary" /></div>
-        <br />
-        Dont Have an account? <br />
-        <q-btn to="Signup" label="SignUp" outline color="primary" />
       </h4>
     </div>
   </q-page>
